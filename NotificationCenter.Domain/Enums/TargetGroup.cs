@@ -3,7 +3,10 @@
     public enum TargetGroup
     {
         All,
-        Individual,
-        Company
+        Individual, 
+        Company,   
+
+        AllIndividual,
+        AllCompany
     }    
 }
