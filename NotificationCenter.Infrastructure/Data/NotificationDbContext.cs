@@ -55,8 +55,8 @@ namespace NotificationCenter.Infrastructure.Data
         {
             // Seed data for Clients
               modelBuilder.Entity<Client>().HasData(
-                new Client { Id = 1, Name = "Ivan Petrov", IsIndividual = true, Username = "ivan.petrov", PasswordHash = "hashed_password_1" },
-                new Client { Id = 2, Name = "DayAndNight Soft EOOD", IsIndividual = false, Username = "dayAndNight.soft", PasswordHash = "hashed_password_2" }
+                new Client { Id = 1, Name = "Ivan Petrov", IsIndividual = true, Username = "ivan.petrov", PasswordHash = BCrypt.Net.BCrypt.HashPassword("password123") },
+                new Client { Id = 2, Name = "DayAndNight Soft EOOD", IsIndividual = false, Username = "dayAndNight.soft", PasswordHash = BCrypt.Net.BCrypt.HashPassword("password123") }
             );
 
 
