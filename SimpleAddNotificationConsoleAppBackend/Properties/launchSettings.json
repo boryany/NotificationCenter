@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SimpleAddNotificationConsoleAppBackend": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

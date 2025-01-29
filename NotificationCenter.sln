@@ -11,13 +11,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationCenter.Infrastr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationCenter.API", "NotificationCenter.API\NotificationCenter.API.csproj", "{7ABA5FE2-75FB-4851-B48D-47214DA4B5A4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleAddNotificationConsoleAppBackend", "SimpleAddNotificationConsoleAppBackend\SimpleAddNotificationConsoleAppBackend.csproj", "{6EF21BD2-7EDF-4FD6-9749-1D5D444F9E99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{EC1AAB1A-BAEF-45D2-A774-36CC1FAE6D30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -36,5 +35,12 @@ Global
 		{7ABA5FE2-75FB-4851-B48D-47214DA4B5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7ABA5FE2-75FB-4851-B48D-47214DA4B5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7ABA5FE2-75FB-4851-B48D-47214DA4B5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EF21BD2-7EDF-4FD6-9749-1D5D444F9E99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EF21BD2-7EDF-4FD6-9749-1D5D444F9E99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EF21BD2-7EDF-4FD6-9749-1D5D444F9E99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EF21BD2-7EDF-4FD6-9749-1D5D444F9E99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
