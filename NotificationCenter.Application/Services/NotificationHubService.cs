@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using NotificationCenter.Application.Hubs;
 using NotificationCenter.Application.Interfaces;
+using NotificationCenter.Domain.Entities;
 
 public class NotificationHubService : INotificationHub
 {
@@ -17,9 +18,15 @@ public class NotificationHubService : INotificationHub
         await _hubContext.Clients.Group(clientId.ToString()).SendAsync("ReceiveNotification", message);
     }
 
-    public async Task SendNotificationToClient(string clientGroup, string message)
+    public async Task SendNotificationMessage(string clientGroup, string message)
     {
         // Send notification to a specific client group
         await _hubContext.Clients.Group(clientGroup).SendAsync("ReceiveNotification", message);
+    }
+
+    public async Task SendNotification(string clientId, Notification notification)
+    {
+        // Send the notification to the specified client
+        await _hubContext.Clients.User(clientId).SendAsync("ReceiveNotification", notification);
     }
 }

@@ -7,9 +7,14 @@ namespace NotificationCenter.Application.Hubs
 {
     public class NotificationHub : Hub
     {
-        public async Task SendNotificationToClient(string clientId, string message)
+        public async Task SendNotificationMessage(string clientId, string message)
         {
             await Clients.Group(clientId).SendAsync("ReceiveNotification", message);
+        }
+
+        public async Task SendNotification(string clientId, Notification notification)
+        {
+            await Clients.User(clientId).SendAsync("ReceiveNotification", notification);
         }
     }
 }

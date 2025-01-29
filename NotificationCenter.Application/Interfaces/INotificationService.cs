@@ -9,7 +9,7 @@ namespace NotificationCenter.Application.Interfaces
 {
     public interface INotificationService
     {
-        Task CreateNotificationAsync(int clientId, int eventId, params object[] parameters);
-        Task<IEnumerable<Notification>> GetNotificationsAsync(int clientId);
+        Task AddNotificationAsync(Notification notification);
+        Task ProcessNotificationEventAsync(NotificationEvent notificationEvent);
     }
 }

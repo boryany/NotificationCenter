@@ -69,7 +69,7 @@ namespace NotificationCenter.Infrastructure.Data
         #region Test Data
         private static void AddTestData(ModelBuilder modelBuilder)
         {
-            //For passwordHash we have BCrypt.Net.BCrypt.HashPassword("password123") = $2a$11$TjtUsIOhCW5WXaboB4T5sO0io6ogMD.T68yeKDvii20EkcsPX.xNm
+            // password for all seed users is password123 and passwordHash for all users is BCrypt.Net.BCrypt.HashPassword("password123") = $2a$11$TjtUsIOhCW5WXaboB4T5sO0io6ogMD.T68yeKDvii20EkcsPX.xNm
 
             // Seed data for Clients
             modelBuilder.Entity<Client>().HasData(
