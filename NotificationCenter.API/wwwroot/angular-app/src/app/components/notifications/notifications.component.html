@@ -1,0 +1,23 @@
+
+<div class="notifications-container">
+  <h1>Your Notifications</h1>
+  <div *ngIf="notifications.length === 0">No notifications yet.</div>
+  <table *ngIf="notifications.length > 0" class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Message</th>
+        <th>Read</th>
+        <th>Created At</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let notification of notifications">
+        <td>{{ notification.id }}</td>
+        <td>{{ notification.message }}</td>
+        <td>{{ notification.isRead ? 'Yes' : 'No' }}</td>
+        <td>{{ notification.createdAt | date: 'medium' }}</td>
+      </tr>
+    </tbody>
+  </table>   
+</div>
